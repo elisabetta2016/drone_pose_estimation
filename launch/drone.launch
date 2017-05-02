@@ -1,0 +1,5 @@
+<launch>
+<node pkg="drone_pose_estimation" type="drone_pose_node" name="drone_pose_estimation" output="screen" respawn="false">
+   <rosparam file="$(find drone_pose_estimation)/launch/params.yaml" command="load"/>
+</node>
+</launch>

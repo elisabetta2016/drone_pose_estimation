@@ -1,0 +1,15 @@
+campose_topic_name: /uav_pose
+output_pose_topic_name: /uav_pose_filtered
+Inertial_frame_id: /map
+Cam_frame_id: /cam
+use_tf_for_cam_pose: False #whether to look the drone pose in tf or from the topic
+drone_frame_id: drone #in case of using tf
+total_delay: 0.3 # in secs
+hovering_gain: 5 #How much the filter should rely on assumption that drone is hovering
+cam_gain: 5 #How much the filter should rely on the pose coming from the cam
+debug: False #show some debug info
+test: False
+test_omega: 0.3
+send_tf: False
+
+# Test with send_tf:True, use_tf_for_cam_pose: True, test: True
